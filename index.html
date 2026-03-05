@@ -71,7 +71,7 @@
                     class="hidden w-full bg-gray-50 rounded-lg overflow-hidden transition-all duration-300">
                     <div id="projectDropDownContent" class="grid grid-cols-2">
                         <!-- Projects will be added dynamically -->
-                         <a href="">Calculator</a>
+                        <a href="">Calculator</a>
                     </div>
                 </div>
                 <a href="https://portfolio-xi-sandy-71.vercel.app/" class="block px-4 py-3 ">Portfolio</a>
@@ -84,6 +84,59 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <section
+            class="max-w-[80%] m-auto px-6 py-16 md:py-28 flex flex-col-reverse md:flex-row justify-between items-center gap-12">
+            <div class="w-full md:w-1/2 space-y-8 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-(--primaryText) leading-[1.1] tracking-tight">
+                    JavaScript <br><span class="text-(--AccentElements)">Projects</span> <br> Collection
+                </h1>
+                <p class="text-(--paragraphColor) text-sm md:text-md max-w-md mx-auto md:mx-0 leading-relaxed">
+                    A specialized collection of interactive mini-applications designed to showcase mastery in Vanilla
+                    JavaScript logic and DOM manipulation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button
+                        class="bg-(--AccentElements) text-white text-sm px-4 py-3.5 rounded-full font-medium flex items-center justify-center space-x-2 hover:bg-blue-600 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                        <span><a href="#projects" class="text-white cursor-pointer">Explore Projects</a></span>
+                        <i class="ph-bold ph-arrow-right text-sm"></i>
+                    </button>
+                    <button
+                        class="bg-(--white) text-(--primaryText) px-4 py-3.5 rounded-full font-medium flex items-center justify-center space-x-2 shadow-2xl hover:bg-gray-900 hover:text-white hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+                        <i class="ph-fill ph-github-logo text-sm"></i>
+                        <span><a href="https://github.com/khalilkhancodes" target="_blank"
+                                class="hover:underline text-sm">View GitHub</a></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full hidden md:block md:w-1/2 justify-center md:justify-end">
+                <div
+                    class="relative w-72 h-72 md:w-96 md:h-96 bg-[#ffffff] backdrop-blur-3xl rounded-3xl border border-white shadow-2xl flex items-center justify-center animate-fade-in">
+                    <div
+                        class="grid grid-cols-2 gap-4 bg-(--paragraphColor)/60 shadow-[5px_5px_15px_rgba(0,0,0,0.3)] p-6 rounded-2xl">
+                        <div
+                            class="w-20 h-20 bg-(--white) shadow-sm rounded-2xl flex items-center justify-center text-3xl font-bold text-(--primaryText) hover:scale-110 transition-transform duration-300">
+                            &lt;/&gt;
+                        </div>
+                        <div
+                            class="w-20 h-20 bg-(--white) shadow-sm rounded-2xl flex items-center justify-center text-3xl font-bold text-(--primaryText) hover:scale-110 transition-transform duration-300">
+                            #
+                        </div>
+                        <div
+                            class="w-20 h-20 bg-(--white) shadow-sm rounded-2xl flex items-center justify-center text-3xl font-bold text-(--primaryText) hover:scale-110 transition-transform duration-300">
+                            <i class="ph-bold ph-arrows-clockwise"></i>
+                        </div>
+                        <div
+                            class="w-20 h-20 bg-(--white) shadow-sm rounded-2xl flex items-center justify-center text-3xl font-bold text-(--primaryText) hover:scale-110 transition-transform duration-300">
+                            <i class="ph-bold ph-spinner-gap animate-spin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script type="module" src="main.js"></script>
 </body>
