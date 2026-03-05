@@ -29,7 +29,6 @@ body {
     --collaborate: #111c30;
 }
 
-
 /* Custom subtle animations */
 @keyframes fade-in {
     from { opacity: 0; transform: translateY(20px); }
