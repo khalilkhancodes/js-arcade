@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="JS Project Lab - A specialized collection of interactive mini-applications designed to showcase mastery in Vanilla JavaScript.">
+    <title>JS Project Lab</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-(--AppBackground) text--(--primaryText) font-sans antialiased selection:bg-(--AccentElements) selection:text-white">
+
+    <header class="w-full bg-(--AppBackground)/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200/60">
+        <nav class="max-w-[90%] m-auto flex justify-between items-center p-5">
+            <div class="flex items-center space-x-2 cursor-pointer transition-transform hover:scale-105">
+                <div class="bg-(--AccentElements) text-white px-3 py-2 rounded-lg">
+                    <i class="ph-bold ph-code text-lg"></i>
+                </div>
+                <span class="font-bold text-lg text-(--AccentElements)">JS Project Lab</span>
+            </div>
+
+            <ul class="hidden md:flex space-x-8 items-center font-medium text-(--paragraphColor)">
+                <li><a href="#" class="hover:text-(--AccentElements) text-sm transition-colors">Home</a></li>
+                <li class="relative group cursor-pointer">
+                    <div class="flex items-center space-x-1 hover:text-(--AccentElements) transition-colors py-2">
+                        <span><a href="#projects"
+                                class="text-(--paragraphColor) text-sm hover:text-(--AccentElements) transition-colors ">Projects</a></span>
+                        <i class="ph ph-caret-down text-sm transition-transform group-hover:rotate-180"></i>
+                    </div>
+                    <div
+                        class="absolute top-full left-0 mt-2 md:w-xl bg-(--white) border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-10">
+                        <div id="mdProjectDropDownContent" class="grid md:grid-cols-3 sm:grid-cols-2 gap-2 p-4">
+                            <a href="">Calculator</a>
+                            <!-- Project List will be dynamically injected here by main.js -->
+                        </div>
+                    </div>
+                </li>
+                <li><a href="https://portfolio-xi-sandy-71.vercel.app/"
+                        class="hover:text-(--AccentElements) text-sm transition-colors">Portfolio</a></li>
+            </ul>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <i id="themeToggle"
+                    class="ph-fill ph-moon darkmode text-sm text-(--paragraphColor) hover:text-(--AccentElements) cursor-pointer transition-colors"></i>
+                <a href="#"
+                    class="flex items-center space-x-2 text-(--paragraphColor) hover:text-(--primaryText) font-medium">
+                    <i class="ph-fill ph-github-logo text-sm"></i>
+                    <span class="text-sm">GitHub</span>
+                </a>
+            </div>
+
+            <button id="Menu" class="md:hidden text-(--primaryText) text-2xl">
+                <i class="ph ph-list"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden w-full bg-white border-b border-gray-100 absolute left-0 top-full shadow-lg">
+            <div class="flex flex-col p-4 text-(--collaborate) font-medium space-y-2">
+                <a href="#" class="block px-4 py-3 bg-gray-50 rounded-lg text-(--AccentElements)    ">Home</a>
+                <div id="ProjectDropDown" class="flex justify-between items-center px-4 py-3 cursor-pointer">
+                    <span>Projects</span>
+                    <i class="ph ph-caret-down"></i>
+                </div>
+                <div id="DropDownContent"
+                    class="hidden w-full bg-gray-50 rounded-lg overflow-hidden transition-all duration-300">
+                    <div id="projectDropDownContent" class="grid grid-cols-2">
+                        <!-- Projects will be added dynamically -->
+                         <a href="">Calculator</a>
+                    </div>
+                </div>
+                <a href="https://portfolio-xi-sandy-71.vercel.app/" class="block px-4 py-3 ">Portfolio</a>
+                <hr class="border-black my-4">
+                <a href="https://github.com/khalilkhancodes" target="_blank"
+                    class="flex items-center space-x-2 px-4 py-3">
+                    <i class="ph-fill ph-github-logo text-sm"></i>
+                    <span class="text-sm">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,41 @@
 @import "tailwindcss";
 
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --AppBackground: #F8FAFC;
+    --secondaryPragraphColor: #FFFFFF;
+    --primaryText: #0F172A;
+    --paragraphColor: #32383f;
+    --AccentElements: #4185f3;
+    --Border: #3B82F6;
+    --white: #FFFFFF;
+    --Collaborate: #0f172A;
+}
+
+.darkmode { 
+    --AppBackground: #0e121c;
+    --secondaryPragraphColor: #64748B;
+    --primaryText: #F8FAFC;
+    --paragraphColor: #d2dceb;
+    --AccentElements: #3B82F6;
+    --Border: #3B82F6;
+    --white: #1b1f25;
+    --collaborate: #111c30;
+}
+
+
+/* Custom subtle animations */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
 }
