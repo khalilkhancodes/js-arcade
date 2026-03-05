@@ -35,7 +35,6 @@
                     <div
                         class="absolute top-full left-0 mt-2 md:w-xl bg-(--white) border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-10">
                         <div id="mdProjectDropDownContent" class="grid md:grid-cols-3 sm:grid-cols-2 gap-2 p-4">
-                            <a href="">Calculator</a>
                             <!-- Project List will be dynamically injected here by main.js -->
                         </div>
                     </div>
@@ -71,7 +70,6 @@
                     class="hidden w-full bg-gray-50 rounded-lg overflow-hidden transition-all duration-300">
                     <div id="projectDropDownContent" class="grid grid-cols-2">
                         <!-- Projects will be added dynamically -->
-                        <a href="">Calculator</a>
                     </div>
                 </div>
                 <a href="https://portfolio-xi-sandy-71.vercel.app/" class="block px-4 py-3 ">Portfolio</a>
@@ -136,6 +134,36 @@
                 </div>
             </div>
         </section>
+
+        <section id="projects" class="max-w-[90%] m-auto px-6 pt-10 pb-6">
+            <h2 class="text-3xl font-bold text-(--primaryText) mb-4">Featured Projects</h2>
+            <p class="text-(--paragraphColor) text-sm md:text-md max-w-2xl mb-8 leading-relaxed">
+                Each project is built with zero dependencies, focusing on clean code, performance, and accessibility.
+            </p>
+        </section>
+
+        <section id="projectsGrid"
+            class="max-w-5xl sm:max-w-4xl m-auto px-8 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Project cards will be dynamically injected here by main.js -->
+        </section>
+
+        <section class="max-w-3xl m-auto px-6 py-20 text-center space-y-8 flex flex-col items-center">
+            <i class="ph-fill ph-quotes text-6xl text-(--paragraphColor) opacity-20"></i>
+            <h3 class="text-4xl font-bold text-(--primaryText) leading-tight">
+                "Code is only as strong as its foundation."
+            </h3>
+            <p class="text-(--paragraphColor) text-sm md:text-md leading-relaxed max-w-3xl">
+                This lab serves as a living documentation of technical growth. By stripping away frameworks like React
+                or Vue, these projects reveal the true power of JavaScript's event-driven architecture and modern Web
+                APIs.
+            </p>
+
+            <div id="techStack" class="flex flex-wrap justify-center gap-3 pt-6">
+                <!-- Tech Stach will be added dynamically -->
+            </div>
+        </section>
+
     </main>
 
     <script type="module" src="main.js"></script>
