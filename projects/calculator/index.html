@@ -29,7 +29,7 @@
                     </div>
                 </output>
 
-                <i id="mblhistory-icon" class="ph ph-clock-counter-clockwise sm:hidden"></i>
+                <i id="mblhistory-icon" class="ph ph-clock-counter-clockwise w-fit p-2 sm:hidden"></i>
 
                 <!-- BUTTONS -->
                 <div id="btn-collection"
@@ -40,7 +40,7 @@
 
             <!-- HISOTRY AND SHORTCUTS -->
             <div id="history-container"
-                class="absolute overflow-y-auto overflow-x-hidden bg-(--bg-main) z-2 right-[-120%] md:right-0 w-80 md:w-full flex justify-between sm:relative md:flex flex-col p-6 h-155 min-h-0 transition-all duration-1000">
+                class="absolute overflow-y-auto overflow-x-hidden bg-(--bg-main) z-2 right-[-120%] md:right-0 w-80 md:w-full flex justify-between sm:relative md:flex flex-col p-6 h-full sm:h-155 min-h-0 transition-all duration-1000">
 
                 <div class="mb-4">
                     <h1 class="font-semibold mb-1 text-gray-200">History</h1>
@@ -51,13 +51,13 @@
                     <!-- History items will be added dynamically -->
                 </div>
 
-                <div class="absolute bottom-0 pb-6 flex justify-between w-88 bg-(--bg-main) pt-2 sm:mb-0">
+                <div class="absolute bottom-0 pb-6 flex justify-between w-64 sm:w-88 bg-(--bg-main) pt-2 sm:mb-0">
                     <i id="DeleteHistory" class="ph ph-trash text-xl"></i>
                     <i id="shortcut-info" class="ph ph-keyboard text-xl"></i>
                 </div>
 
                 <div id="shortcut-bar"
-                    class="absolute w-full h-130 bg-(--bg-main) text-gray-300 right-[-125%] transition-all duration-1000 z-10 pl-6 overflow-y-auto">
+                    class="absolute w-full h-[90%] sm:h-130 bg-(--bg-main) text-gray-300 right-[-125%] transition-all duration-1000 z-10 pl-6 overflow-y-auto">
                     <div class="mb-4">
                         <h1 class="font-semibold mb-1 text-gray-200">Shortcuts</h1>
                         <hr class="bg-(--btn-equals-bg) border-0 h-1 w-8 rounded-2xl">
