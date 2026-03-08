@@ -40,18 +40,18 @@
 
             <!-- HISOTRY AND SHORTCUTS -->
             <div id="history-container"
-                class="absolute bg-(--bg-main) z-2 right-[-120%] md:right-0 w-80 md:w-full flex justify-between sm:relative md:flex flex-col p-6 h-full min-h-0 transition-all duration-1000">
+                class="absolute overflow-y-auto overflow-x-hidden bg-(--bg-main) z-2 right-[-120%] md:right-0 w-80 md:w-full flex justify-between sm:relative md:flex flex-col p-6 h-155 min-h-0 transition-all duration-1000">
 
                 <div class="mb-4">
                     <h1 class="font-semibold mb-1 text-gray-200">History</h1>
                     <hr class="bg-(--btn-equals-bg) border-0 h-1 w-6 rounded-2xl">
                 </div>
 
-                <div id="history" class="flex-1 overflow-y-auto text-gray-400 flex flex-col gap-3 ">
+                <div id="history" class="flex-1 text-gray-400 flex flex-col gap-3 ">
                     <!-- History items will be added dynamically -->
                 </div>
 
-                <div class="flex justify-between mb-10 sm:mb-0">
+                <div class="absolute bottom-0 pb-6 flex justify-between w-88 bg-(--bg-main) pt-2 sm:mb-0">
                     <i id="DeleteHistory" class="ph ph-trash text-xl"></i>
                     <i id="shortcut-info" class="ph ph-keyboard text-xl"></i>
                 </div>

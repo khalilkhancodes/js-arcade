@@ -47,7 +47,7 @@ button {
     scrollbar-color: var(--btn-operator-bg) transparent;
 }
 
-#history {
+#history-container {
     scrollbar-width: thin;
     scrollbar-color: var(--btn-operator-bg) transparent;
 }
