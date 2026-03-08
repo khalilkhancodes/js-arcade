@@ -27,65 +27,65 @@ const projectDropDownContent = document.getElementById("projectDropDownContent")
 
 const Projects = [
     {
-        icon: "ph-fill ph-clock",
-        title: "Clock Timer",
-        description: "Precision Interval Timer with Start, Stop, and Reset Functionality",
-        explore: "Explore Implementation",
-        exploreLink: "",
-    },
-    {
         icon: "ph-fill ph-calculator",
         title: "Calculator",
         description: "Dynamic Calculator with Real-time Display and Comprehensive Functionality",
         explore: "Explore Implementation",
-        exploreLink: "",
+        exploreLink: "projects/calculator/index.html",
     },
+    {
+        icon: "ph-fill ph-clock",
+        title: "Clock Timer",
+        description: "Precision Interval Timer with Start, Stop, and Reset Functionality",
+        explore: "Explore Implementation",
+        exploreLink: "projects/clock-timer/index.html",
+    },
+    
     {
         icon: "ph-fill ph-hash",
         title: "Counter App",
         description: "Interactive Counter App with Increment, Decrement, and Reset Functionality",
         explore: "Explore Implementation",
-        exploreLink: "",
+        exploreLink: "projects/counter-app/index.html",
     },
     {
         icon: "ph-fill ph-cloud-sun",
         title: "Weather App",
         description: "Real-time Weather Forecasting with Dynamic UI and Geolocation",
         explore: "Explore Implementation",
-        exploreLink: "",
-        exploreIcon: "ph-fill ph-arrow-right",
+        exploreLink: "projects/weather-app/index.html",
     },
     {
         icon: "ph-fill ph-question",
         title: "Quiz Master",
         description: "Interactive Quiz Application with Multiple Question Types and Scoring System",
         explore: "Explore Implementation",
-        exploreLink: "",
+        exploreLink: "projects/quiz-master/index.html",
     },
     {
         icon: "ph-fill ph-grid-nine",
         title: "Tic Tac Toe",
         description: "Classic Tic Tac Toe Game with Interactive Gameplay and Score Tracking",
         explore: "Explore Implementation",
-        exploreLink: "",
+        exploreLink: "projects/tic-tac-toe/index.html",
     },
     {
         icon: "ph-fill ph-image",
         title: "Image Editor",
         description: "Simple Image Editing Application with Basic Tools and Effects",
         explore: "Explore Implementation",
-        exploreLink: "",
+        exploreLink: "projects/image-editor/index.html",
     },
     {
         icon: "ph-fill ph-play-circle",
         title: "Audio Player",
         description: "Simple Audio Player with Play, Pause, and Volume Control",
         explore: "Explore Implementation",
-        exploreLink: "",
+        exploreLink: "projects/audio-player/index.html",
     },
     {
         icon: "ph-fill ph-code",
-        title: "More Projects Coming",
+        title: "More Coming ...",
         description:"Suggest an idea on github",
         explore: ""
     }
@@ -98,11 +98,11 @@ techStackData.forEach(tech => {
 });
 
 Projects.forEach(project => {
-    mdProjectDropDownContent.innerHTML += `<a href="#" class="px-4 py-2 hover:text-(--AccentElements) transition-colors">${project.title}</a>`;
+    mdProjectDropDownContent.innerHTML += `<a href="${project.exploreLink}" class="px-4 py-2 hover:text-(--AccentElements) transition-colors">${project.title}</a>`;
 })
 
 Projects.forEach(project => {
-    projectDropDownContent.innerHTML += `<a href="#" class="block px-8 py-3 hover:text-(--AccentElements)">${project.title}</a>`;
+    projectDropDownContent.innerHTML += `<a href="${project.exploreLink}" class="block px-8 py-3 hover:text-(--AccentElements)">${project.title}</a>`;
 })
 
 if (currentTheme === 'dark') {

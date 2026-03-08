@@ -1,0 +1,24 @@
+:root {
+  --bg-main: #202020;
+  --btn-number-bg: #535353eb;
+  --btn-operator-bg: #323232;
+  --btn-danger-bg: #eb5353;
+  --btn-danger-hover-bg: #d14646;
+  --btn-equals-bg: #d8b0ebfd;
+  --btn-equals-hover-bg: #d699f2;
+}
+
+body {
+    background-color: var(--bg-main);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li, a, button, i {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
