@@ -22,3 +22,61 @@ li, a, button, i {
     color: inherit;
     cursor: pointer;
 }
+
+button {
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.calc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.1s;
+}
+
+#shortcut-bar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--btn-operator-bg) transparent;
+}
+
+#history {
+    scrollbar-width: thin;
+    scrollbar-color: var(--btn-operator-bg) transparent;
+}
+
+.btn-number {
+    background-color: var(--btn-number-bg);
+}
+.btn-number:hover {
+    background-color: var(--btn-operator-bg);
+}
+
+.btn-operator {
+    background-color: var(--btn-operator-bg);
+}
+.btn-operator:hover {
+    background-color: var(--btn-number-bg);
+}
+
+.btn-danger {
+    background-color: var(--btn-danger-bg);
+}
+.btn-danger:hover {
+    background-color: var(--btn-danger-hover-bg);
+    color: var(--btn-danger-hover-text);
+}
+
+.btn-secondary {
+    background-color: var(--btn-operator-bg);
+}
+.btn-secondary:hover {
+    background-color: var(--btn-number-bg);
+}

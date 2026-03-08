@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,68 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
+
+    <main class="flex flex-col items-center justify-center sm:justify-start overflow-hidden">
+
+        <section class="w-full h-full grid md:grid-cols-3 gap-6 px-4 sm:px-6 font-sans text-white">
+
+            <div class="md:col-span-2 flex flex-col gap-10 md:gap-6 min-h-0 h-full p-4">
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-calculator text-xl"></i>
+                    <h1>Calculator</h1>
+                </div>
+
+                <output id="display" class="shrink-0 h-44 md:h-32 p-2 pb-4 flex flex-col overflow-hidden">
+                    <div id="expression" class="text-gray-400 text-sm mb-1 truncate w-full text-right">
+                    </div>
+                    <div id="result" class="text-4xl md:text-6xl font-light tracking-wider truncate w-full text-right">
+                    </div>
+                </output>
+
+                <i id="mblhistory-icon" class="ph ph-clock-counter-clockwise sm:hidden"></i>
+
+                <!-- BUTTONS -->
+                <div id="btn-collection"
+                    class="flex-1 flex-col gap-3 grid grid-cols-5 sm:gap-1 min-h-0 overflow-hidden md:pb-1">
+                    <!-- Buttons will be added dynamically -->
+                </div>
+            </div>
+
+            <!-- HISOTRY AND SHORTCUTS -->
+            <div id="history-container"
+                class="absolute bg-(--bg-main) z-2 right-[-120%] md:right-0 w-80 md:w-full flex justify-between sm:relative md:flex flex-col p-6 h-full min-h-0 transition-all duration-1000">
+
+                <div class="mb-4">
+                    <h1 class="font-semibold mb-1 text-gray-200">History</h1>
+                    <hr class="bg-(--btn-equals-bg) border-0 h-1 w-6 rounded-2xl">
+                </div>
+
+                <div id="history" class="flex-1 overflow-y-auto text-gray-400 flex flex-col gap-3 ">
+                    <!-- History items will be added dynamically -->
+                </div>
+
+                <div class="flex justify-between mb-10 sm:mb-0">
+                    <i id="DeleteHistory" class="ph ph-trash text-xl"></i>
+                    <i id="shortcut-info" class="ph ph-info"></i>
+                </div>
+
+                <div id="shortcut-bar"
+                    class="absolute w-full h-130 bg-(--bg-main) text-gray-300 right-[-125%] transition-all duration-1000 z-10 pl-6 overflow-y-auto">
+                    <div class="mb-4">
+                        <h1 class="font-semibold mb-1 text-gray-200">Shortcuts</h1>
+                        <hr class="bg-(--btn-equals-bg) border-0 h-1 w-8 rounded-2xl">
+                    </div>
+                    <!-- Shortcut items will be added dynamically -->
+                </div>
+
+            </div>
+        </section>
+    </main>
+
     <script src="../../main.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
