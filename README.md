@@ -7,7 +7,7 @@ A growing collection of interactive, responsive web applications built entirely 
 
 This repository serves as a showcase of clean architecture, data-driven UI design, advanced DOM manipulation, and responsive layouts.
 
-🔗 **[Live Demo: Explore the JS Arcade](https://your-live-link-here.vercel.app)**
+🔗 **[Live Demo: Explore the JS Arcade](https://javascript-arcade-gold.vercel.app/)**
 
 ---
 
