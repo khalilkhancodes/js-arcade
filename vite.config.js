@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         calculator: resolve(__dirname, 'projects/calculator/index.html'),
+        clockTimer: resolve(__dirname, 'projects/clock-timer/index.html'),
       },
     },
   },
