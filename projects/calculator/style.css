@@ -42,12 +42,7 @@ button {
     transition: all 0.1s;
 }
 
-#shortcut-bar {
-    scrollbar-width: thin;
-    scrollbar-color: var(--btn-operator-bg) transparent;
-}
-
-#history-container {
+#shortcut-bar, #history-container {
     scrollbar-width: thin;
     scrollbar-color: var(--btn-operator-bg) transparent;
 }

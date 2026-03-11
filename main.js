@@ -5,7 +5,7 @@ const menuBtn = document.getElementById("Menu");
 const mobileMenu = document.getElementById("mobile-menu");
 const projectDropDownBtn = document.getElementById("ProjectDropDown");
 const dropDownContent = document.getElementById("DropDownContent");
-const dropDownIcon = projectDropDownBtn.querySelector("i");
+const dropDownIcon = document.getElementById("mblDropDown");
 
 // Projects Data
 const projectsGrid = document.getElementById("projectsGrid");
