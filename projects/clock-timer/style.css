@@ -1,19 +1,37 @@
 :root {
-  --color-white: #ffffff;
+  --bg-color: #dbdfed;
   --color-icon-fill: #2F3AA0;
-  --button-bg: #f0f0f0;
+  --button-bg: #c7dcf182;
   --timer-color: #5462db;
+  transition: all 0.2s ease;
 }
 
 .dark{
-   --color-white: #050505;
-   --color-icon-fill: #2F3AA0;
-    --button-bg: #1c1d23;
+   --bg-color: #1c1c24;
+   --color-icon-fill: #6c78de;
+    --button-bg: #1f2333e8;
+    --timer-color: #c3c6e4;
+    transition: all 0.2s ease;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Quantico', sans-serif;
+}
+
+i{
+  color: var(--color-icon-fill);
+  font-size: larger;
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+
+header,nav, .left-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

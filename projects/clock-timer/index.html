@@ -8,15 +8,54 @@
 
     <link rel="stylesheet" href="/style.css">
 
-    <!-- favicon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="/assets/clock-timer/favicon.png" class="object-cover">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
     <script type="module" src="./script.js"></script>
 </head>
 
-<body>
+<body class="bg-(--bg-color) min-h-screen h-full w-full space-y-10 sm:space-y-4 overflow-hidden">
+    <header>
+        <nav class="w-5xl m-auto p-6">
+            <li class="size-8"><img src="/assets/clock-timer/clock.png" alt="Clock Timer Logo"></li>
+            <div class="right-nav items-center relative size-4">
+                <li><i id="dark-mode" class="ph-fill ph-moon"></i></li>
+                <li class="absolute top-0 left-0"><i id="light-mode" class="z-10 hidden ph-fill ph-sun"></i></li>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="image-section sm:size-60 flex m-auto"><img src="/assets/clock-timer/clock.png"
+                alt="Clock Timer"></section>
+        <section class="timer-section">
+            <div class="timer">
+                <div
+                    class="time-display text-4xl font-light leading-loose py-10 text-center text-(--timer-color) w-full">
+                    00:00:00</div>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <div class="controls flex items-center z-10 justify-center space-x-6">
+            <button class="control-btn size-16 rounded-full bg-(--button-bg) pt-1"><i id="start-btn"
+                    class="ph-bold ph-play"></i></button>
+            <button class="control-btn size-16 rounded-full bg-(--button-bg) pt-1"><i id="pause-btn"
+                    class="ph-fill ph-pause"></i></button>
+            <button class="control-btn size-16 rounded-full bg-(--button-bg) pt-1"><i id="reset-btn"
+                    class="ph-bold ph-stop"></i></button>
+        </div>
+    </section>
 
 </body>
 
