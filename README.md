@@ -4,7 +4,7 @@ A curated collection of Vanilla JavaScript mini-projects focused on DOM manipula
 
 ![Project Grid Preview](./assets/screenshots/ProjectsGrid.png)
 
-🔗 **Live Demo:** [javascript-arcade-gold.vercel.app](https://javascript-arcade-gold.vercel.app/)
+🔗 **Live Demo:** [javascript-arcade-gold.vercel.app](https://js-arcade-five.vercel.app/)
 
 ---
 
@@ -97,4 +97,4 @@ Features:
 
 ### Clone the repository:
    ```bash
-   git clone https://github.com/khalilkhancodes/JS-Arcade.git
+   git clone https://github.com/khalilkhancodes/js-arcade.git
