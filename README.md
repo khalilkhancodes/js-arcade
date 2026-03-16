@@ -1,43 +1,100 @@
-# 🕹️ JS Arcade
+# 🕹️ JS Project Lab
 
-A growing collection of interactive, responsive web applications built entirely from scratch to master **Vanilla JavaScript, HTML, and Tailwind CSS**—without the reliance on frontend frameworks or libraries. 
+A curated collection of Vanilla JavaScript mini-projects focused on DOM manipulation, browser APIs, and responsive UI patterns.
 
-![Landing Page Preview](./assets/screenshots/ProjectsGrid.png)
+![Project Grid Preview](./assets/screenshots/ProjectsGrid.png)
 
-
-This repository serves as a showcase of clean architecture, data-driven UI design, advanced DOM manipulation, and responsive layouts.
-
-🔗 **[Live Demo: Explore the JS Arcade](https://javascript-arcade-gold.vercel.app/)**
+🔗 **Live Demo:** [javascript-arcade-gold.vercel.app](https://javascript-arcade-gold.vercel.app/)
 
 ---
 
-## 📂 The Projects Vault
+## 📁 Repository Overview
 
-Below is the directory of applications currently available in the arcade. 
+This workspace includes:
 
-### 🧮 1. Dynamic Calculator (`/projects/calculator`)
-A fully responsive, scalable calculator that processes complex mathematics including trigonometric functions, factorials, and logarithms.
+- A Vite-powered landing page (`index.html`, `main.js`, `style.css`)
+- Individual project apps inside `projects/`
+- Shared assets and screenshots inside `assets/`
 
-![Calculator Preview](./assets/screenshots/Calculator.png)
+Current project folders:
 
-**Tech Highlights:**
-- **Data-Driven UI:** Buttons and shortcut menus are generated dynamically from a single JavaScript array, eliminating hardcoded HTML blocks.
-- **Event Delegation:** Optimized performance with a single event listener handling all user interactions.
-- **Accessibility:** Full keyboard mapping (`keydown` events) for seamless typing alongside standard mouse clicks.
-- **Custom Math Engine:** A centralized `handleInput` function processes multi-step mathematical strings and handles degree-to-radian conversions natively.
+- `projects/calculator`
+- `projects/clock-timer`
+- `projects/dad-jokes`
+- `projects/counter` *(currently empty / WIP)*
 
+---
 
-## 🛠️ Global Tech Stack
+## 🚀 Projects + Screenshots
 
-- **Frontend:** HTML5, CSS3 (Custom Variables, Flexbox, Grid),, Tailwind CSS
-- **Logic:** Vanilla JavaScript (ES6+)
-- **Architecture:** Component-based file structure, Event Delegation, Dynamic DOM rendering
-- **Assets:** Phosphor Icons
+### 1) 🧮 Calculator
 
-## 🚀 Running Locally
+Path: `projects/calculator`
 
-To explore these projects on your local machine:
+Features:
+- Dynamic button rendering from a JS configuration array
+- Keyboard shortcuts for calculator input
+- Scientific operations (trig, log, factorial, reciprocal, exponent)
+- Expression/result history panel
 
-1. Clone the repository:
+![Calculator Screenshot](./assets/screenshots/Calculator.png)
+
+---
+
+### 2) ⏱️ Clock Timer
+
+Path: `projects/clock-timer`
+
+Features:
+- Start, pause, and reset controls
+- `HH:MM:SS` time formatting
+- Light/dark mode toggle using CSS custom properties
+
+![Clock Timer Screenshot](./assets/screenshots/clock-timer.png)
+
+---
+
+### 3) 😂 Dad Jokes App
+
+Path: `projects/dad-jokes`
+
+Features:
+- Async joke fetch from `https://icanhazdadjoke.com/`
+- Loading state + error fallback text
+- Minimal, centered card UI
+
+![Dad Jokes Screenshot](./assets/screenshots/dad-jokes.png)
+
+---
+
+## 🧰 Tech Stack
+
+- HTML5
+- CSS3 + CSS Variables
+- Vanilla JavaScript (ES6+)
+- Tailwind CSS (via `@tailwindcss/vite`)
+- Vite (multi-page build config)
+
+---
+
+## ▶️ Run Locally
+
+1. Install dependencies:
+
+   `npm install`
+
+2. Start development server:
+
+   `npm run dev`
+
+3. Build production output:
+
+   `npm run build`
+
+4. Preview production build:
+
+   `npm run preview`
+
+### Clone the repository:
    ```bash
    git clone https://github.com/khalilkhancodes/JS-Arcade.git

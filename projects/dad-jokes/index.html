@@ -14,4 +14,18 @@
     <script type="module" src="./script.js"></script>
 </head>
 
+<body class="bg-(--background-color) p-8 w-full h-screen flex justify-center items-center">
+    <div
+        class="container w-[80%] sm:w-[50%] bg-(--box-bg) shadow-md rounded-lg p-6 flex flex-col justify-center items-center space-y-8">
+        <div>
+            <h1 class="text-3xl font-bold text-(--background-color)">Dad Jokes App</h1>
+        </div>
+        <div class="jokes text-(--text-color) text-xl font-semibold mb-10 p-4 bg-(--background-color) rounded-lg w-full text-center"
+            id="joke"> Click the button to get a joke! </div>
+        <div class="flex justify-center items-center"> <button id="jokeButton"
+                class="bg-(--button-color) text-white px-4 py-2 rounded hover:bg-(--button-hover-color)"> Get a Joke
+            </button> </div>
+    </div>
+</body>
+
 </html>
