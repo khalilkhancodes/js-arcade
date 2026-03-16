@@ -12,6 +12,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         calculator: resolve(__dirname, 'projects/calculator/index.html'),
         clockTimer: resolve(__dirname, 'projects/clock-timer/index.html'),
+        dadJokes: resolve(__dirname, 'projects/dad-jokes/index.html'),
       },
     },
   },

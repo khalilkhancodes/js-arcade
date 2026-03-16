@@ -40,7 +40,13 @@ const Projects = [
         explore: "Explore Implementation",
         exploreLink: "projects/clock-timer/index.html",
     },
-    
+    {
+        icon: "ph-fill ph-clock",
+        title: "Dad Jokes App",
+        description: "Fetch and Display Random Dad Jokes with a User-Friendly Interface",
+        explore: "Explore Implementation",
+        exploreLink: "projects/dad-jokes/index.html",
+    },
     {
         icon: "ph-fill ph-hash",
         title: "Counter App",
