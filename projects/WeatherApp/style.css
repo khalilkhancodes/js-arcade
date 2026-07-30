@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --glass-blur: blur(12px);
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffa781 0%, #f56b4d 50%, #e34a31 100%);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+/* Utility Classes */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.5rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header{
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background: #cec9c97a;
+  backdrop-filter: blur(5px);
+  box-shadow: 8px 8px 20px 4px #23232333;
+}
+
+/* Navigation */
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main); /* Cyan accent from logo */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+/* Search Bar */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 3rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.near-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-info .tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero-info h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-info h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.temp-display {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.temp-display .temp {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.temp-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: var(--glass-bg);
+  padding: 0.25rem;
+  border-radius: 1rem;
+}
+
+.temp-toggles span {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.temp-toggles span.active {
+  background: white;
+  color: #e34a31;
+  font-weight: 600;
+}
+
+.conditions p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Hero Visuals (Sun & Timings) */
+.hero-visuals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-icon-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-icon-container i {
+  width: 120px;
+  height: 120px;
+  color: white;
+}
+
+.sun-times {
+  display: flex;
+  gap: 1rem;
+}
+
+.time-card {
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.time-card span {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.time-card strong {
+  font-size: 1rem;
+}
+
+/* Horizontal Scroll Sections (Responsive Sliders) */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.section-header a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  opacity: 0.8;
+}
+
+/* The Slider Magic */
+.slider-container {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Forecast Cards */
+.forecast-card {
+  flex: 0 0 calc(100% / 7 - 1.25rem); /* Default to 7 columns */
+  min-width: 100px; /* Ensure they don't shrink too small on mobile */
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  scroll-snap-align: start;
+}
+
+.forecast-card.active {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.forecast-card .day {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.forecast-card .temps {
+  text-align: center;
+}
+
+.forecast-card .high {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+}
+
+.forecast-card .low {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Metrics Cards */
+.metrics-section {
+  margin-top: 3rem;
+}
+
+.metric-card {
+  flex: 0 0 calc(33.333% - 1.25rem);
+  min-width: 250px;
+  padding: 1.5rem;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+}
+
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-main);
+  opacity: 0.9;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .temp-display {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .temp-display > p{
+    display: none;
+  }
+  
+  .nav-links {
+    display: none; /* Hide on mobile for brevity, usually replaced by hamburger */
+  }
+}

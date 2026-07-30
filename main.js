@@ -59,7 +59,7 @@ const Projects = [
         title: "Weather App",
         description: "Real-time Weather Forecasting with Dynamic UI and Geolocation",
         explore: "Explore Implementation",
-        exploreLink: "projects/weather-app/index.html",
+        exploreLink: "projects/WeatherApp/index.html",
     },
     {
         icon: "ph-fill ph-question",

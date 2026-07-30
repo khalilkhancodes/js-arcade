@@ -13,6 +13,7 @@ export default defineConfig({
         calculator: resolve(__dirname, 'projects/calculator/index.html'),
         clockTimer: resolve(__dirname, 'projects/clock-timer/index.html'),
         dadJokes: resolve(__dirname, 'projects/dad-jokes/index.html'),
+        weather: resolve(__dirname, 'projects/WeatherApp/index.html'),
       },
     },
   },

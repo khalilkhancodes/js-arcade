@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding png as Favicon -->
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
+    <title>Apna Weather | Weather App</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i data-lucide="cloud-rain"></i> ApnaWeather
+            </div>
+            <div class="nav-actions">
+                <div class="profile-pic">
+                    <img src="https://ui-avatars.com/api/?name=AW&background=0D8ABC&color=fff" alt="Profile"
+                        style="width: 100%; height: 100%;">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="search-wrapper">
+            <div class="search-bar glass">
+                <div style="display: flex; align-items: center; flex: 1;">
+                    <i data-lucide="search" style="color: rgba(255,255,255,0.7); width: 18px;"></i>
+                    <input type="text" class="search-input" placeholder="Search for your city...">
+                </div>
+                <div class="near-me">
+                    <p>|</p>
+                    <i data-lucide="map-pin" style="width: 10px;"></i>Near Me
+                </div>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero-info">
+                <span class="tag glass">Current Location</span>
+                <h1 class="city-name"></h1>
+                <h2 class="country-name">California, United States</h2>
+
+                <div class="temp-display">
+                    <div style="display: flex; align-items: center; gap: 1.5rem;">
+                        <div class="temp">21°</div>
+                        <div class="temp-toggles">
+                            <span class="celcius active">°C</span>
+                            <span class="fahrenheit">°F</span>
+                        </div>
+                    </div>
+                    <p>|</p>
+                    <div class="conditions">
+                        <p id="weather-conditions"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visuals">
+                <div class="main-icon-container glass">
+                    <!-- <i data-lucide="cloud-rain" style="width: 120px; height: 120px;" stroke-width="1.5"></i> -->
+                </div>
+                <div class="sun-times">
+                    <div class="time-card glass">
+                        <span>Sunrise</span>
+                        <strong id="sunrise-time">06:12 AM</strong>
+                    </div>
+                    <div class="time-card glass">
+                        <span>Sunset</span>
+                        <strong id="sunset-time">08:04
+                            PM</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <h3>5-Day Forecast</h3>
+                <a href="#">See monthly view <i data-lucide="arrow-up-right" style="width: 16px;"></i></a>
+            </div>
+
+            <div class="slider-container">
+                <!-- Forecast cards will be dynamically generated here -->
+                
+            </div>
+        </section>
+
+        <section class="metrics-section">
+            <div class="section-header">
+                <h3>Environmental Metrics</h3>
+            </div>
+
+            <div class="slider-container">
+                <div class="metric-card glass">
+                    <div class="metric-header">
+                        <span>Humidity</span>
+                        <i data-lucide="droplets" style="width: 18px;"></i>
+                    </div>
+                    <div id="humidity-value" class="metric-value">45%</div>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-header">
+                        <span>Wind</span>
+                        <i data-lucide="wind" style="width: 18px;"></i>
+                    </div>
+                    <div id="wind-value" class="metric-value">12 km/h</div>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-header">
+                        <span>Pressure</span>
+                        <i data-lucide="gauge" style="width: 18px;"></i>
+                    </div>
+                    <div id="pressure-value" class="metric-value">1013 hPa</div>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-header">
+                        <span>Temperature</span>
+                        <i data-lucide="thermometer" style="width: 18px;"></i>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div id="min-temperature-value" class="metric-value">20°</div>
+                        <div id="max-temperature-value" class="metric-value">20°</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
