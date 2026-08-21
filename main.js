@@ -66,7 +66,7 @@ const Projects = [
         title: "Quiz Master",
         description: "Interactive Quiz Application with Multiple Question Types and Scoring System",
         explore: "Explore Implementation",
-        exploreLink: "projects/quiz-master/index.html",
+        exploreLink: "projects/QuizMaster/index.html",
     },
     {
         icon: "ph-fill ph-grid-nine",
