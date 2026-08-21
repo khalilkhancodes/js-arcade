@@ -3,183 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Master - Minimalist Quiz Master</title>
+  <title>IT Quiz Master</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Screen 1: Quiz Start -->
-  <div id="screen-start" class="screen active">
+  <!-- Screen 1: Home Screen -->
+  <div id="screen-home" class="screen active">
     <div class="container">
-      <header class="header">
+      <header class="home-header">
         <div class="logo">
           <div class="logo-icon">Q</div>
-          <h1 class="logo-text">Quiz Master</h1>
         </div>
-        <p class="tagline">Cognitive Clarity Design System</p>
+        <h1 class="logo-text">IT Quiz Master</h1>
+        <p class="tagline">Test your IT knowledge across 7 core subjects</p>
       </header>
 
-      <main class="start-content">
-        <div class="welcome-section">
-          <h2 class="welcome-title">Welcome to Quiz Master</h2>
-          <p class="welcome-subtitle">Test your knowledge across different categories</p>
+      <main class="home-content">
+        <div class="hero-section">
+          <div class="hero-icon">🎯</div>
+          <h2 class="hero-title">Ready to Challenge Yourself?</h2>
+          <p class="hero-subtitle">Answer questions from Database, Data Structures, Programming, OS, Networks, Software Engineering, and Web Development</p>
         </div>
 
-        <div class="quiz-info">
-          <div class="info-item">
-            <span class="info-label">Questions</span>
-            <span class="info-value" id="question-count">10</span>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">📚</div>
+            <div class="stat-value">7</div>
+            <div class="stat-label">Subjects</div>
           </div>
-          <div class="info-item">
-            <span class="info-label">Time per question</span>
-            <span class="info-value">15s</span>
+          <div class="stat-card">
+            <div class="stat-icon">❓</div>
+            <div class="stat-value">35</div>
+            <div class="stat-label">Questions</div>
           </div>
-          <div class="info-item">
-            <span class="info-label">Total time</span>
-            <span class="info-value">2.5 min</span>
-          </div>
-        </div>
-
-        <div class="category-section">
-          <h3 class="section-title">Select Categories</h3>
-          <div class="category-grid" id="category-grid">
-            <!-- Categories will be loaded dynamically -->
+          <div class="stat-card">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-value">15s</div>
+            <div class="stat-label">Per Question</div>
           </div>
         </div>
 
-        <div class="selected-info">
-          <span id="selected-count">3</span> of <span id="total-categories">3</span> categories selected
-        </div>
-
-        <button class="btn btn-primary btn-lg" id="start-btn" disabled>
+        <button class="btn btn-primary btn-xl" id="start-home-btn">
           Start Quiz
+          <span class="btn-arrow">→</span>
         </button>
       </main>
-
-      <footer class="footer">
-        <p>Quiz Master &copy; 2026</p>
-      </footer>
     </div>
   </div>
 
-  <!-- Screen 2: Quiz Question -->
-  <div id="screen-question" class="screen">
+  <!-- Screen 2: Select Category Screen -->
+  <div id="screen-category" class="screen">
     <div class="container">
-      <header class="question-header">
-        <div class="progress-info">
-          <span class="question-number" id="question-number">1</span>
-          <span class="question-separator">/</span>
-          <span class="total-questions" id="total-questions">10</span>
+      <header class="category-header">
+        <button class="btn-back" id="back-to-home">
+          <span class="back-arrow">←</span>
+          <span>Back</span>
+        </button>
+        <h2 class="screen-title">Select Subjects</h2>
+        <p class="screen-subtitle">Choose at least 1 subject to start</p>
+      </header>
+
+      <main class="category-content">
+        <div class="category-list" id="category-list">
+          <!-- Categories will be loaded dynamically -->
         </div>
+
+        <div class="category-footer">
+          <div class="selected-info">
+            <span id="selected-count">0</span> of <span id="total-categories">7</span> selected
+          </div>
+          <button class="btn btn-primary btn-lg" id="start-quiz-btn" disabled>
+            Start Quiz
+          </button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Screen 3: Quiz Question Screen -->
+  <div id="screen-quiz" class="screen">
+    <div class="container">
+      <header class="quiz-header">
+        <div class="quiz-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <div class="progress-text">
+            <span id="current-question">1</span>
+            <span class="progress-separator">/</span>
+            <span id="total-questions">10</span>
+          </div>
+        </div>
+
         <div class="timer" id="timer">
-          <div class="timer-bar" id="timer-bar"></div>
-          <span class="timer-text" id="timer-text">15</span>
+          <div class="timer-ring">
+            <svg class="timer-svg" viewBox="0 0 36 36">
+              <path class="timer-ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+              <path class="timer-ring-progress" id="timer-ring-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            </svg>
+            <span class="timer-text" id="timer-text">15</span>
+          </div>
         </div>
       </header>
 
-      <main class="question-content">
-        <div class="question-category" id="question-category">Mathematics</div>
-        <h2 class="question-text" id="question-text">What is 15 + 27?</h2>
+      <main class="quiz-content">
+        <div class="question-badge" id="question-badge">
+          <span class="badge-icon" id="badge-icon">🗄️</span>
+          <span class="badge-text" id="badge-text">Database</span>
+        </div>
+
+        <h2 class="question-text" id="question-text">Loading question...</h2>
 
         <div class="answers-grid" id="answers-grid">
-          <button class="answer-btn" data-option="a">
+          <button class="answer-btn" data-option="0">
             <span class="answer-letter">A</span>
-            <span class="answer-text" id="answer-a">42</span>
+            <span class="answer-text">Option A</span>
           </button>
-          <button class="answer-btn" data-option="b">
+          <button class="answer-btn" data-option="1">
             <span class="answer-letter">B</span>
-            <span class="answer-text" id="answer-b">40</span>
+            <span class="answer-text">Option B</span>
           </button>
-          <button class="answer-btn" data-option="c">
+          <button class="answer-btn" data-option="2">
             <span class="answer-letter">C</span>
-            <span class="answer-text" id="answer-c">44</span>
+            <span class="answer-text">Option C</span>
           </button>
-          <button class="answer-btn" data-option="d">
+          <button class="answer-btn" data-option="3">
             <span class="answer-letter">D</span>
-            <span class="answer-text" id="answer-d">39</span>
+            <span class="answer-text">Option D</span>
           </button>
         </div>
 
-        <div class="explanation" id="explanation"></div>
-
-        <div class="navigation">
-          <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
-          <button class="btn btn-primary" id="next-btn">Next</button>
-          <button class="btn btn-primary" id="submit-btn" style="display: none;">Submit Quiz</button>
+        <div class="explanation-box" id="explanation-box">
+          <div class="explanation-icon">💡</div>
+          <p class="explanation-text" id="explanation-text"></p>
         </div>
+
+        <button class="btn btn-primary btn-lg" id="next-btn" disabled>
+          Next Question
+        </button>
       </main>
     </div>
   </div>
 
-  <!-- Screen 3: Quiz Results -->
-  <div id="screen-results" class="screen">
+  <!-- Screen 4: Quiz Result Screen -->
+  <div id="screen-result" class="screen">
     <div class="container">
-      <header class="results-header">
-        <div class="results-icon" id="results-icon">🎉</div>
-        <h2 class="results-title" id="results-title">Great Job!</h2>
+      <header class="result-header">
+        <div class="result-icon" id="result-icon">🎉</div>
+        <h2 class="result-title" id="result-title">Great Job!</h2>
+        <p class="result-subtitle" id="result-subtitle">You've completed the quiz</p>
       </header>
 
-      <main class="results-content">
-        <div class="score-card">
-          <div class="score-percentage" id="score-percentage">0%</div>
-          <div class="score-label">Your Score</div>
-        </div>
-
-        <div class="score-details">
-          <div class="detail-item correct">
-            <span class="detail-count" id="correct-count">0</span>
-            <span class="detail-label">Correct</span>
+      <main class="result-content">
+        <div class="score-circle">
+          <div class="score-inner">
+            <span class="score-number" id="score-number">0</span>
+            <span class="score-percent">%</span>
           </div>
-          <div class="detail-item incorrect">
-            <span class="detail-count" id="incorrect-count">0</span>
-            <span class="detail-label">Incorrect</span>
+          <svg class="score-ring" viewBox="0 0 100 100">
+            <circle class="score-ring-bg" cx="50" cy="50" r="45"/>
+            <circle class="score-ring-progress" id="score-ring-progress" cx="50" cy="50" r="45"/>
+          </svg>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-item correct">
+            <div class="stat-count" id="correct-count">0</div>
+            <div class="stat-label">Correct</div>
           </div>
-          <div class="detail-item skipped">
-            <span class="detail-count" id="skipped-count">0</span>
-            <span class="detail-label">Skipped</span>
+          <div class="stat-item wrong">
+            <div class="stat-count" id="wrong-count">0</div>
+            <div class="stat-label">Wrong</div>
+          </div>
+          <div class="stat-item skipped">
+            <div class="stat-count" id="skipped-count">0</div>
+            <div class="stat-label">Skipped</div>
           </div>
         </div>
 
-        <div class="performance-bar">
-          <div class="performance-fill" id="performance-fill"></div>
+        <div class="subject-breakdown" id="subject-breakdown">
+          <!-- Subject results will be loaded dynamically -->
         </div>
 
-        <div class="category-breakdown" id="category-breakdown">
-          <!-- Category results will be loaded dynamically -->
-        </div>
-
-        <div class="results-actions">
-          <button class="btn btn-secondary" id="summary-btn">View Summary</button>
-          <button class="btn btn-primary" id="restart-btn">Try Again</button>
+        <div class="result-actions">
+          <button class="btn btn-primary btn-lg" id="play-again-btn">
+            Play Again
+          </button>
+          <button class="btn btn-secondary btn-lg" id="home-btn">
+            Back to Home
+          </button>
         </div>
       </main>
-    </div>
-  </div>
-
-  <!-- Screen 4: Quiz Summary -->
-  <div id="screen-summary" class="screen">
-    <div class="container">
-      <header class="summary-header">
-        <h2 class="summary-title">Quiz Summary</h2>
-        <p class="summary-subtitle" id="summary-subtitle">Here's a breakdown of your answers</p>
-      </header>
-
-      <main class="summary-content">
-        <div class="summary-list" id="summary-list">
-          <!-- Summary items will be loaded dynamically -->
-        </div>
-
-        <div class="summary-actions">
-          <button class="btn btn-secondary" id="share-btn">Share Results</button>
-          <button class="btn btn-primary" id="play-again-btn">Play Again</button>
-        </div>
-      </main>
-
-      <footer class="footer">
-        <p>Quiz Master &copy; 2026</p>
-      </footer>
     </div>
   </div>
 
