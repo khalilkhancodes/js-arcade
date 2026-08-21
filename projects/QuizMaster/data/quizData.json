@@ -1,0 +1,387 @@
+{
+  "title": "Minimalist Quiz Master",
+  "description": "Cognitive Clarity Design System",
+  "questionsPerQuiz": 10,
+  "categories": [
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "icon": "📐",
+      "color": "#6366f1"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "icon": "🔬",
+      "color": "#10b981"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "icon": "📜",
+      "color": "#f59e0b"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "category": "math",
+      "question": "What is 15 + 27?",
+      "options": [
+        {"id": "a", "text": "42", "isCorrect": false},
+        {"id": "b", "text": "40", "isCorrect": true},
+        {"id": "c", "text": "44", "isCorrect": false},
+        {"id": "d", "text": "39", "isCorrect": false}
+      ],
+      "explanation": "15 + 27 = 42"
+    },
+    {
+      "id": 2,
+      "category": "math",
+      "question": "What is 8 × 7?",
+      "options": [
+        {"id": "a", "text": "56", "isCorrect": true},
+        {"id": "b", "text": "54", "isCorrect": false},
+        {"id": "c", "text": "48", "isCorrect": false},
+        {"id": "d", "text": "63", "isCorrect": false}
+      ],
+      "explanation": "8 × 7 = 56"
+    },
+    {
+      "id": 3,
+      "category": "math",
+      "question": "What is 144 ÷ 12?",
+      "options": [
+        {"id": "a", "text": "10", "isCorrect": false},
+        {"id": "b", "text": "14", "isCorrect": false},
+        {"id": "c", "text": "12", "isCorrect": true},
+        {"id": "d", "text": "11", "isCorrect": false}
+      ],
+      "explanation": "144 ÷ 12 = 12"
+    },
+    {
+      "id": 4,
+      "category": "math",
+      "question": "What is 25²?",
+      "options": [
+        {"id": "a", "text": "625", "isCorrect": true},
+        {"id": "b", "text": "525", "isCorrect": false},
+        {"id": "c", "text": "675", "isCorrect": false},
+        {"id": "d", "text": "575", "isCorrect": false}
+      ],
+      "explanation": "25² = 625"
+    },
+    {
+      "id": 5,
+      "category": "math",
+      "question": "What is the value of π rounded to two decimal places?",
+      "options": [
+        {"id": "a", "text": "3.15", "isCorrect": false},
+        {"id": "b", "text": "3.14", "isCorrect": true},
+        {"id": "c", "text": "3.16", "isCorrect": false},
+        {"id": "d", "text": "3.13", "isCorrect": false}
+      ],
+      "explanation": "π ≈ 3.14159... rounded to 3.14"
+    },
+    {
+      "id": 6,
+      "category": "math",
+      "question": "What is 10% of 250?",
+      "options": [
+        {"id": "a", "text": "20", "isCorrect": false},
+        {"id": "b", "text": "25", "isCorrect": true},
+        {"id": "c", "text": "30", "isCorrect": false},
+        {"id": "d", "text": "15", "isCorrect": false}
+      ],
+      "explanation": "10% of 250 = 250 × 0.10 = 25"
+    },
+    {
+      "id": 7,
+      "category": "math",
+      "question": "What is √81?",
+      "options": [
+        {"id": "a", "text": "7", "isCorrect": false},
+        {"id": "b", "text": "9", "isCorrect": true},
+        {"id": "c", "text": "8", "isCorrect": false},
+        {"id": "d", "text": "11", "isCorrect": false}
+      ],
+      "explanation": "√81 = 9"
+    },
+    {
+      "id": 8,
+      "category": "math",
+      "question": "What is 3/4 + 1/2?",
+      "options": [
+        {"id": "a", "text": "1.25", "isCorrect": true},
+        {"id": "b", "text": "1.50", "isCorrect": false},
+        {"id": "c", "text": "1.00", "isCorrect": false},
+        {"id": "d", "text": "0.75", "isCorrect": false}
+      ],
+      "explanation": "3/4 + 1/2 = 0.75 + 0.50 = 1.25"
+    },
+    {
+      "id": 9,
+      "category": "math",
+      "question": "What is 2³ × 3²?",
+      "options": [
+        {"id": "a", "text": "36", "isCorrect": false},
+        {"id": "b", "text": "72", "isCorrect": true},
+        {"id": "c", "text": "48", "isCorrect": false},
+        {"id": "d", "text": "54", "isCorrect": false}
+      ],
+      "explanation": "2³ × 3² = 8 × 9 = 72"
+    },
+    {
+      "id": 10,
+      "category": "math",
+      "question": "What is 1000 - 467?",
+      "options": [
+        {"id": "a", "text": "533", "isCorrect": true},
+        {"id": "b", "text": "543", "isCorrect": false},
+        {"id": "c", "text": "523", "isCorrect": false},
+        {"id": "d", "text": "513", "isCorrect": false}
+      ],
+      "explanation": "1000 - 467 = 533"
+    },
+    {
+      "id": 11,
+      "category": "science",
+      "question": "What planet is known as the Red Planet?",
+      "options": [
+        {"id": "a", "text": "Venus", "isCorrect": false},
+        {"id": "b", "text": "Mars", "isCorrect": true},
+        {"id": "c", "text": "Jupiter", "isCorrect": false},
+        {"id": "d", "text": "Saturn", "isCorrect": false}
+      ],
+      "explanation": "Mars is called the Red Planet due to iron oxide on its surface."
+    },
+    {
+      "id": 12,
+      "category": "science",
+      "question": "What is the chemical symbol for water?",
+      "options": [
+        {"id": "a", "text": "HO₂", "isCorrect": false},
+        {"id": "b", "text": "H₂O", "isCorrect": true},
+        {"id": "c", "text": "OH₂", "isCorrect": false},
+        {"id": "d", "text": "O₂H", "isCorrect": false}
+      ],
+      "explanation": "Water is H₂O - two hydrogen atoms and one oxygen atom."
+    },
+    {
+      "id": 13,
+      "category": "science",
+      "question": "What gas do plants absorb from the atmosphere?",
+      "options": [
+        {"id": "a", "text": "Oxygen", "isCorrect": false},
+        {"id": "b", "text": "Nitrogen", "isCorrect": false},
+        {"id": "c", "text": "Carbon Dioxide", "isCorrect": true},
+        {"id": "d", "text": "Hydrogen", "isCorrect": false}
+      ],
+      "explanation": "Plants absorb CO₂ for photosynthesis."
+    },
+    {
+      "id": 14,
+      "category": "science",
+      "question": "What is the boiling point of water at sea level in Celsius?",
+      "options": [
+        {"id": "a", "text": "90°C", "isCorrect": false},
+        {"id": "b", "text": "110°C", "isCorrect": false},
+        {"id": "c", "text": "100°C", "isCorrect": true},
+        {"id": "d", "text": "120°C", "isCorrect": false}
+      ],
+      "explanation": "Water boils at 100°C at standard atmospheric pressure."
+    },
+    {
+      "id": 15,
+      "category": "science",
+      "question": "What is the largest organ in the human body?",
+      "options": [
+        {"id": "a", "text": "Heart", "isCorrect": false},
+        {"id": "b", "text": "Liver", "isCorrect": false},
+        {"id": "c", "text": "Brain", "isCorrect": false},
+        {"id": "d", "text": "Skin", "isCorrect": true}
+      ],
+      "explanation": "The skin is the largest organ, covering about 20 square feet."
+    },
+    {
+      "id": 16,
+      "category": "science",
+      "question": "What force keeps us on the ground?",
+      "options": [
+        {"id": "a", "text": "Magnetism", "isCorrect": false},
+        {"id": "b", "text": "Gravity", "isCorrect": true},
+        {"id": "c", "text": "Friction", "isCorrect": false},
+        {"id": "d", "text": "Electricity", "isCorrect": false}
+      ],
+      "explanation": "Gravity is the force that attracts objects toward the center of the Earth."
+    },
+    {
+      "id": 17,
+      "category": "science",
+      "question": "What is the chemical symbol for gold?",
+      "options": [
+        {"id": "a", "text": "Go", "isCorrect": false},
+        {"id": "b", "text": "Gd", "isCorrect": false},
+        {"id": "c", "text": "Au", "isCorrect": true},
+        {"id": "d", "text": "Ag", "isCorrect": false}
+      ],
+      "explanation": "Gold's chemical symbol is Au, from the Latin 'aurum'."
+    },
+    {
+      "id": 18,
+      "category": "science",
+      "question": "How many planets are in our solar system?",
+      "options": [
+        {"id": "a", "text": "7", "isCorrect": false},
+        {"id": "b", "text": "9", "isCorrect": false},
+        {"id": "c", "text": "8", "isCorrect": true},
+        {"id": "d", "text": "10", "isCorrect": false}
+      ],
+      "explanation": "There are 8 planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune."
+    },
+    {
+      "id": 19,
+      "category": "science",
+      "question": "What type of animal is a dolphin?",
+      "options": [
+        {"id": "a", "text": "Fish", "isCorrect": false},
+        {"id": "b", "text": "Mammal", "isCorrect": true},
+        {"id": "c", "text": "Reptile", "isCorrect": false},
+        {"id": "d", "text": "Amphibian", "isCorrect": false}
+      ],
+      "explanation": "Dolphins are mammals that breathe air and nurse their young."
+    },
+    {
+      "id": 20,
+      "category": "science",
+      "question": "What is the speed of light approximately?",
+      "options": [
+        {"id": "a", "text": "300,000 km/s", "isCorrect": true},
+        {"id": "b", "text": "150,000 km/s", "isCorrect": false},
+        {"id": "c", "text": "500,000 km/s", "isCorrect": false},
+        {"id": "d", "text": "1,000,000 km/s", "isCorrect": false}
+      ],
+      "explanation": "Light travels at approximately 300,000 kilometers per second."
+    },
+    {
+      "id": 21,
+      "category": "history",
+      "question": "In what year did World War II end?",
+      "options": [
+        {"id": "a", "text": "1943", "isCorrect": false},
+        {"id": "b", "text": "1944", "isCorrect": false},
+        {"id": "c", "text": "1945", "isCorrect": true},
+        {"id": "d", "text": "1946", "isCorrect": false}
+      ],
+      "explanation": "WWII ended in 1945 with the surrender of Germany and Japan."
+    },
+    {
+      "id": 22,
+      "category": "history",
+      "question": "Who was the first President of the United States?",
+      "options": [
+        {"id": "a", "text": "Thomas Jefferson", "isCorrect": false},
+        {"id": "b", "text": "George Washington", "isCorrect": true},
+        {"id": "c", "text": "John Adams", "isCorrect": false},
+        {"id": "d", "text": "Benjamin Franklin", "isCorrect": false}
+      ],
+      "explanation": "George Washington served as the first US President from 1789-1797."
+    },
+    {
+      "id": 23,
+      "category": "history",
+      "question": "What ancient wonder was located in Giza, Egypt?",
+      "options": [
+        {"id": "a", "text": "Hanging Gardens", "isCorrect": false},
+        {"id": "b", "text": "Colossus", "isCorrect": false},
+        {"id": "c", "text": "Great Pyramid", "isCorrect": true},
+        {"id": "d", "text": "Lighthouse", "isCorrect": false}
+      ],
+      "explanation": "The Great Pyramid of Giza is the oldest of the Seven Wonders."
+    },
+    {
+      "id": 24,
+      "category": "history",
+      "question": "In what year did the Titanic sink?",
+      "options": [
+        {"id": "a", "text": "1910", "isCorrect": false},
+        {"id": "b", "text": "1912", "isCorrect": true},
+        {"id": "c", "text": "1914", "isCorrect": false},
+        {"id": "d", "text": "1908", "isCorrect": false}
+      ],
+      "explanation": "The Titanic sank on April 15, 1912."
+    },
+    {
+      "id": 25,
+      "category": "history",
+      "question": "Who discovered America in 1492?",
+      "options": [
+        {"id": "a", "text": "Vasco da Gama", "isCorrect": false},
+        {"id": "b", "text": "Christopher Columbus", "isCorrect": true},
+        {"id": "c", "text": "Ferdinand Magellan", "isCorrect": false},
+        {"id": "d", "text": "Amerigo Vespucci", "isCorrect": false}
+      ],
+      "explanation": "Christopher Columbus reached the Americas in 1492."
+    },
+    {
+      "id": 26,
+      "category": "history",
+      "question": "What empire was ruled by Julius Caesar?",
+      "options": [
+        {"id": "a", "text": "Greek Empire", "isCorrect": false},
+        {"id": "b", "text": "Persian Empire", "isCorrect": false},
+        {"id": "c", "text": "Roman Empire", "isCorrect": true},
+        {"id": "d", "text": "Egyptian Empire", "isCorrect": false}
+      ],
+      "explanation": "Julius Caesar was a leader of the Roman Republic/Empire."
+    },
+    {
+      "id": 27,
+      "category": "history",
+      "question": "When was the Declaration of Independence signed?",
+      "options": [
+        {"id": "a", "text": "1774", "isCorrect": false},
+        {"id": "b", "text": "1776", "isCorrect": true},
+        {"id": "c", "text": "1778", "isCorrect": false},
+        {"id": "d", "text": "1780", "isCorrect": false}
+      ],
+      "explanation": "The Declaration of Independence was adopted on July 4, 1776."
+    },
+    {
+      "id": 28,
+      "category": "history",
+      "question": "What was the name of the ship that brought the Pilgrims to America in 1620?",
+      "options": [
+        {"id": "a", "text": "Santa Maria", "isCorrect": false},
+        {"id": "b", "text": "Mayflower", "isCorrect": true},
+        {"id": "c", "text": "Discovery", "isCorrect": false},
+        {"id": "d", "text": "Endeavour", "isCorrect": false}
+      ],
+      "explanation": "The Mayflower brought the Pilgrims to Plymouth, Massachusetts."
+    },
+    {
+      "id": 29,
+      "category": "history",
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        {"id": "a", "text": "Michelangelo", "isCorrect": false},
+        {"id": "b", "text": "Raphael", "isCorrect": false},
+        {"id": "c", "text": "Leonardo da Vinci", "isCorrect": true},
+        {"id": "d", "text": "Donatello", "isCorrect": false}
+      ],
+      "explanation": "Leonardo da Vinci painted the Mona Lisa between 1503-1519."
+    },
+    {
+      "id": 30,
+      "category": "history",
+      "question": "What wall fell in 1989 symbolizing the end of the Cold War?",
+      "options": [
+        {"id": "a", "text": "Hadrian's Wall", "isCorrect": false},
+        {"id": "b", "text": "Berlin Wall", "isCorrect": true},
+        {"id": "c", "text": "Great Wall", "isCorrect": false},
+        {"id": "d", "text": "Iron Curtain", "isCorrect": false}
+      ],
+      "explanation": "The Berlin Wall fell on November 9, 1989."
+    }
+  ]
+}

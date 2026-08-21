@@ -14,6 +14,7 @@ export default defineConfig({
         clockTimer: resolve(__dirname, 'projects/clock-timer/index.html'),
         dadJokes: resolve(__dirname, 'projects/dad-jokes/index.html'),
         weather: resolve(__dirname, 'projects/WeatherApp/index.html'),
+        quizMaster: resolve(__dirname, 'projects/QuizMaster/index.html'),
       },
     },
   },
